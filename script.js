@@ -52,3 +52,21 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+// form validation
+
+function sendEmail() {
+    Email.send({
+        SecureToken : "99c4d112-14b2-4396-96c3-86344b91707f",
+        To : 'wahyu120ajah@gmail.com',
+        From : "wahyu120ajah@gmail.com",
+        Subject : "wahyu@test.com",
+        Body : "Name: " + document.getElementById("name").value 
+        + "<br> Email: " + document.getElementById("email").value 
+        + "<br> Phone no: " + document.getElementById("phone").value
+        + "<br> Message: " + document.getElementById("message").value
+    }).then(
+      message => alert(message)
+    );
+}

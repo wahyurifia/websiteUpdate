@@ -152,7 +152,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
                      
-                        <form id="contactForm">
+                        <form id="contactForm" onsubmit="sendEmail()">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" placeholder="Enter your name..." />
@@ -427,6 +427,8 @@
                 </div>
             </div>
         </div>
+        <!-- CDN smtpJS.com -->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
